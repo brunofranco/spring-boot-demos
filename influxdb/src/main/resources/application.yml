@@ -1,0 +1,22 @@
+
+management:
+  server:
+    port: 8081
+  endpoint:
+    metrics.enabled: true
+    beans:
+      enabled: true
+  endpoints.web:
+    base-path: /
+    exposure.include: "*"
+
+  metrics:
+    export:
+      influx:
+        enabled: true
+        uri: http://localhost:8086
+        autoCreateDb: true
+        db: db
+        username: metrics
+        password: metrics
+        step: 10s

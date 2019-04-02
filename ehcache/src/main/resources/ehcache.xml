@@ -1,0 +1,17 @@
+<config
+        xmlns:jsr107='http://www.ehcache.org/v3/jsr107'
+        xmlns='http://www.ehcache.org/v3'>
+    <service>
+        <jsr107:defaults enable-management="true" enable-statistics="true"/>
+    </service>
+
+    <cache alias="cenas">
+        <expiry>
+            <ttl unit="seconds">2</ttl>
+        </expiry>
+        <resources>
+            <heap>100</heap>
+        </resources>
+    </cache>
+
+</config>

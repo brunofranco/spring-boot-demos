@@ -1,0 +1,6 @@
+
+setup influxdb
+
+docker pull influxdb
+docker run -p 8086:8086 influxdb
+
